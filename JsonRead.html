@@ -1,0 +1,25 @@
+ 
+    <html> 
+    <head></head> 
+    <body> 
+    <p>Hello World</p>
+    <button onclick="showDetails()">Show Details</button>
+    <div id="details"></div>
+
+    <script>
+        function showDetails() {
+
+            var jsonData = {"employees": [{"firstName": "John", "lastName": "Doe", "city": "Colombo"}, {"firstName": "Anna", "lastName": "Smith", "city": "Kandy"}, {"firstName": "Peter", "lastName": "Jones", "city": "Galle"}]};
+            var html = "";
+            for (var i = 0; i < jsonData.employees.length; i++) {
+                html += "<p>Name: " + jsonData.employees[i].firstName + " " + jsonData.employees[i].lastName + "</p>" +
+                        "<p>City: " + jsonData.employees[i].city + "</p><br>";
+            }
+
+
+            document.getElementById("details").innerHTML = html;
+        }
+    </script>
+    </body> 
+    </html> 
+    

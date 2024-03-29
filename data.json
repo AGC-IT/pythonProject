@@ -1,0 +1,5 @@
+{"employees":[
+  { "firstName":"John", "lastName":"Doe", "city": "Colombo" },
+  { "firstName":"Anna", "lastName":"Smith", "city": "Kandy" },
+  { "firstName":"Peter", "lastName":"Jones", "city": "Galle" }
+]}
